@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_bg"
+    tools:context=".activity.SettingActivity">
+
+    <ImageView
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="50dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:src="@mipmap/ic_app"
+        android:layout_width="100dp"
+        android:layout_height="100dp"/>
+
+    <TextView
+        android:text="version 1.0.0"
+        android:textColor="#ddffffff"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="170dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <LinearLayout
+        android:orientation="vertical"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="250dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_marginLeft="30dp"
+            android:textSize="14sp"
+            android:padding="10dp"
+            android:text="分辨率"
+            android:textColor="#ddffffff"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <RadioGroup
+            android:id="@+id/rg"
+            android:layout_marginTop="30dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <RadioButton
+                android:drawablePadding="5dp"
+                android:textColor="#ddFFFFFF"
+                android:gravity="center_horizontal"
+                android:text="标清"
+                android:id="@+id/rb0"
+                android:drawableTop="@drawable/selector_bq"
+                android:button="@null"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+            </RadioButton>
+            <RadioButton
+                android:drawablePadding="5dp"
+                android:textColor="#ddFFFFFF"
+                android:gravity="center_horizontal"
+                android:text="高清"
+                android:id="@+id/rb1"
+                android:drawableTop="@drawable/selector_gq"
+                android:button="@null"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+            </RadioButton>
+            <RadioButton
+                android:drawablePadding="5dp"
+                android:textColor="#ddFFFFFF"
+                android:gravity="center_horizontal"
+                android:text="超清"
+                android:id="@+id/rb2"
+                android:drawableTop="@drawable/selector_cq"
+                android:button="@null"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+            </RadioButton>
+        </RadioGroup>
+    </LinearLayout>
+
+    <TextView
+        android:textIsSelectable="true"
+        android:padding="20dp"
+        android:textColor="#AAFFFFFF"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:text="1127005935@qq.com"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

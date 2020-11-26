@@ -1,0 +1,3 @@
+include ':LiverSdk'
+include ':app'
+rootProject.name = "Liver"

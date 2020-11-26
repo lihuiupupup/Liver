@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Liver</string>
+    <string name="start_push">开始直播</string>
+    <string name="start_pull">开始拉流</string>
+</resources>
